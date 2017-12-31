@@ -3,7 +3,8 @@
     <div class="row">
     <div class="col-lg-10 mx-auto">
         <%# <img class="img-fluid" src="img/bluelogo.svg"> %>
-            <img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/atelier-website/Images/bluelogo.svg">
+        <%= link_to(image_tag("https://s3.us-east-2.amazonaws.com/atelier-website/Images/bluelogo.svg", class: "img-fluid"), static_pages_home_path)%>
+            <%# <img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/atelier-website/Images/bluelogo.svg"> %>
         <!-- <h1 class="text-uppercase">
         <strong>Your Favorite Source of Free Bootstrap Themes</strong>
         </h1> -->
@@ -11,7 +12,7 @@
     </div>
     <div class="col-lg-8 mx-auto">
         <p class="text-faded black blue mb-5">A creative agency from your brain for your brain</p>
-        <%= link_to("View the pitch deck", static_pages_home_path, class: 'btn btn-primary btn-primary-blue btn-xl js-scroll-trigger')%>
+        <%= link_to("View the pitch deck", 'https://indd.adobe.com/view/0d90169e-ffb8-46ce-aa3a-106717177161', class: 'btn btn-primary btn-primary-blue btn-xl js-scroll-trigger')%>
         <%# <a class="btn btn-primary btn-primary-blue btn-xl js-scroll-trigger" href="index.html">View the pitch deck</a> %>
     </div>
     </div>
